@@ -2,7 +2,7 @@ require "slack"
 
 token = ENV['token']
 puts token
-icon = 'https://appstickers-cdn.appadvice.com/1158454115/819397787/4534b0f0c56c20c70a08a4f81acc1153-3.gif';
+icon = 'https://appstickers-cdn.appadvice.com/1158454115/819397787/4534b0f0c56c20c70a08a4f81acc1153-3.gif'
 name = 'くりえいてぃぶ担当'
 
 Slack.configure do |config|
