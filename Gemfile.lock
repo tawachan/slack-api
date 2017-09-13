@@ -6,7 +6,6 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    chronic (0.10.2)
     concurrent-ruby (1.0.5)
     eventmachine (1.2.5)
     faraday (0.13.1)
@@ -42,8 +41,6 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    whenever (0.9.7)
-      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
@@ -51,7 +48,6 @@ PLATFORMS
 DEPENDENCIES
   slack-api
   slack-ruby-client
-  whenever
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
