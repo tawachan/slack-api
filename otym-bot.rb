@@ -1,3 +1,5 @@
+Process.daemon if ARGV.any? {|i| i == '-D' }
+
 require 'slack-ruby-client'
 
 token = ENV['token_otym']
