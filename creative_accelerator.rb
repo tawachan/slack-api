@@ -16,10 +16,12 @@ when 10 then '10時: さすがにもう来たよね？'
 when 12 then '12時: ++ ランチタイム ++ ツナ缶は持った？'
 when 15 then '15時: クリエイティブはまだまだこれから'
 when 17 then '17時: ∠(｀・ω・´)'
-when 19 then '19時: 時期尚早なパンプキン(´・ω・｀)'
+when 18 then '18時: Bonjour, comment ça va ?'
+when 19 then '19時: ！！！東急のお弁当が！！！割引！！！！されるよ！！！！'
+when 20 then '20時: ネタ切れ(´・ω・｀)'
 when 21 then '21時: まだ行ける！まだまだクリエイティブが加速する！'
 when 22 then '22時: 冷静に帰ろ(´・ω・｀)'
-else '特になし'
+else '睡眠妨害∠(｀・ω・´)'
 end
 
 puts Slack.chat_postMessage(text: text, channel: 'parrots', icon_url: icon, username: name)
