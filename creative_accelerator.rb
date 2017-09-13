@@ -1,6 +1,6 @@
 require "slack"
 
-token = ENV['token']
+token = "xoxp-55694862148-209212906049-239758814960-53274193e1dfc7556ef7cb67840ecbe0"
 puts token
 icon = 'https://appstickers-cdn.appadvice.com/1158454115/819397787/4534b0f0c56c20c70a08a4f81acc1153-3.gif'
 name = 'くりえいてぃぶ担当'
