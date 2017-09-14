@@ -29,6 +29,11 @@ client.on :message do |data|
     if text.include?('集合！')
       client.message channel: data.channel, text: ":fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot:"
     end
+    if text.include?('解散！')
+      (1.30).each do |i|
+        client.message channel: data.channel, text: "."
+      end
+    end
   end
   puts data
 end
