@@ -23,6 +23,9 @@ client.on :message do |data|
     if text.include?(':fastparrot:')
       client.message channel: data.channel, text: "クリエイティブが加速する(　･ิω･ิ)"
     end
+    if text.include?('SES')
+      client.message channel: data.channel, text: "寝言は寝てから言い給え(　･ิω･ิ)"
+    end
   end
   puts data
 end
