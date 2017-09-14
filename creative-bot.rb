@@ -26,6 +26,9 @@ client.on :message do |data|
     if text.include?('SES')
       client.message channel: data.channel, text: "寝言は寝てから言い給え(　･ิω･ิ)"
     end
+    if text.include?('集合！')
+      client.message channel: data.channel, text: ":fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot:"
+    end
   end
   puts data
 end
