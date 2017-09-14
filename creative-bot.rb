@@ -35,7 +35,7 @@ client.on :message do |data|
       end
     end
     if text.include('#解散')
-      text = ".........................................".split('\n')
+      text = ".........................................".chars.join('\n')
       client.message channel: data.channel, text: text
     end
   end
