@@ -29,52 +29,52 @@ client.on :message do |data|
     if text.include?('集合！')
       client.message channel: data.channel, text: ":fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot:"
     end
-    if text.include?('解散！')
-      (1..30).each do |i|
-        client.message channel: data.channel, text: "."
-      end
-    end
-    if text.include?('#解散')
+    if text.include?('解散'！)
       text = <<-EOS
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
-        .
         
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
         EOS
       client.message channel: data.channel, text: text
+    end
+    if text.include?('静粛に！')
+      client.message channel: data.channel, text: ":parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep:"
+    end
+    if text.include?('酒豪！')
+      client.message channel: data.channel, text: ":shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot:"
     end
   end
   puts data
