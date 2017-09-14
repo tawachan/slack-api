@@ -31,7 +31,7 @@ client.on :message do |data|
     end
     if text.include?('解散！')
       text = <<-EOS
-        
+
         .
         .
         .
@@ -74,11 +74,10 @@ client.on :message do |data|
       client.message channel: data.channel, text: ":parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep::parrotsleep:"
     end
     if text.include?('酒豪！')
-      client.message channel: data.channel, text: ":shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot:"
+      client.message channel: data.channel, text: ":shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::shuffleparrot::beer:"
     end
   end
   puts data
 end
 
 client.start!
-
