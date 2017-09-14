@@ -29,7 +29,7 @@ client.on :message do |data|
     if text.include?('集合！')
       client.message channel: data.channel, text: ":fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot::fastparrot:"
     end
-    if text.include?('解散'！)
+    if text.include?('解散！')
       text = <<-EOS
         
         .
