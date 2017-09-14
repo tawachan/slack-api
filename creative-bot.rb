@@ -35,7 +35,45 @@ client.on :message do |data|
       end
     end
     if text.include?('#解散')
-      text = ".........................................".chars.join('\n')
+      text = <<-EOS
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        
+        EOS
       client.message channel: data.channel, text: text
     end
   end
