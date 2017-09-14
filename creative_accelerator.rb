@@ -1,4 +1,4 @@
-require "slack"
+require 'slack-ruby-client'
 
 token = ENV['token']
 puts token
@@ -9,6 +9,7 @@ Slack.configure do |config|
   config.token = token
 end
 
+client = Slack::Web::Client.new
 
 text = case Time.now.hour
 when  9 then  '9時: もう教室に来てるかな？今日もクリエイティブが加速するぜい・ω・'
@@ -24,4 +25,4 @@ when 22 then '22時: 冷静に帰ろ(´・ω・｀)'
 else '睡眠妨害∠(｀・ω・´)'
 end
 
-puts Slack.chat_postMessage(text: text, channel: 'parrots', icon_url: icon, username: name)
+puts client.chat_postMessage(text: text, channel: 'parrots', icon_url: icon, username: name)

@@ -46,6 +46,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  eventmachine
+  faye-websocket
   slack-api
   slack-ruby-client
 
